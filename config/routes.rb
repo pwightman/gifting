@@ -1,4 +1,8 @@
 Gifting::Application.routes.draw do
+  root to: "pages#home"
+  match '/auth/:provider/callback' => 'authentications#create', via: :get
+  match '/logout' => 'authentications#destroy', via: :get
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
