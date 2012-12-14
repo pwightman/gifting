@@ -16,5 +16,4 @@ class User < ActiveRecord::Base
       authentication.save!
       user
     end
-
 end
