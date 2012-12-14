@@ -9,6 +9,12 @@ gem 'pg'
 gem 'haml'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'therubyracer', '~> 0.11.0beta5'
+group :libv8 do
+  gem 'libv8', "~> 3.11.8"
+end
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 group :development, :test do
   gem 'sqlite3'

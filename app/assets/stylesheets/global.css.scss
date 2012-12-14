@@ -3,7 +3,6 @@ body {
 }
 
 #content {
-  width:800px;
   margin:0 auto;
 }
 
@@ -13,6 +12,8 @@ body {
     .image {
       float:left;
       margin-right:10px;
+      height: 30px;
+      width: 30px;
     }
   }
 }

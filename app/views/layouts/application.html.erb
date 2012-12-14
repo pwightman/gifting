@@ -9,7 +9,29 @@
 <body>
 
 <div id="content">
-  <div id="header"><%= render 'layouts/header' %></div>
+  <div id="header"><div class="container"><%= render 'layouts/header' %></div></div>
+  
+	<div class="container" id="page">
+		<div class="row-fluid">
+			<%= render 'layouts/left_sidebar' %>
+			<div class="span7" id="list">
+				<div id="listTitle"><h1>Alex's List</h1></div>
+				<form>
+					<ul id="item-list">
+						<li class="item"><input type="checkbox"><span>A Pony</span></li>
+							<li class="comment"><span>I was going to get it, but I couldn't find it.</span></li>
+							<li class="comment"><span>That sucks! I'll try Barnes and Noble.</span></li>
+							<li class="comment newcomment"><input type="text" placeholder="Add a comment..."></li>
+						<li class="item purchased"><input type="checkbox"><span>Present 2</span></li>
+						<li class="item"><input type="checkbox"><span>Present 3</span></li>
+						<li class="item"><input type="checkbox"><span>Alligator</span></li>
+					</ul>
+				</form>
+			</div>
+			<%= render 'layouts/right_sidebar' %>
+		</div>
+	</div>
+
 
   <%= yield %>
 </div>
