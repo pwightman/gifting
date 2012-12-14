@@ -1,10 +1,3 @@
-body {
-	background: {
-		image: url(../img/wood.png);
-		position: center;
-	}
-}
-
 .navbar-static-top {
 	box-shadow: 0px 1px 5px black;
 }
@@ -12,7 +5,7 @@ body {
 #header {
 	.log-in-out {
 		margin: {
-			top: 13px;
+			top: 17px;
 		}
 	}
 	padding: {
@@ -48,6 +41,9 @@ body {
 	font-size: 15px;
 	position: relative;
 	top: -10px;
+	padding: {
+		right: 20px;
+	}
 	li {
 		list-style-type: none;
 	}
@@ -83,52 +79,51 @@ body {
 			span {
 				line-height: 30px;
 				border-radius: $borderRadius;
-				width: 480px;
-				float: right;
-				background: {
-					color: #f5f5f5;
-				}
+				width: 100%;
 				padding: {
-					left: 5px;
+					left: 10px;
+				}
+				margin: {
+					left: 10px;
 				}
 				display: block;
 				height: 30px;
 			}
-			width: 500px;
+			width: 100%;
 			border-radius: $borderRadius;
 			height: $itemHeight;
 			margin: {
 				top: 2px;
 				bottom: 2px;
 			}
-			padding: {
-				left: 5px;
-			}
-			background: yellow;
+			background: #f5f5f5
 		}
 		.comment {
 			span {
 				border-radius: $borderRadius;
 				line-height: 30px;
 				float: right;
-				width: 400px;
+				width: 100%;
 				background: {
 					color: #bcbcbc;
 				}
 				padding: {
 					left: 15px;
 				}
+				margin: {
+					right: -40px;
+				}
 				display: block;
 				height: 100%;
 			}
 			border-radius: $borderRadius;
 			height: $itemHeight;
-			width: 460px;
+			width: 100%;
 			background: red;
 			margin: {
 				top: 2px;
 				bottom: 2px;
-				left: 20px;
+				left: 40px;
 			}
 		}
 		.purchased {
