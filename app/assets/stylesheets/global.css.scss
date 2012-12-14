@@ -10,5 +10,9 @@ body {
 #header {
   .log-in-out {
     float:right;
+    .image {
+      float:left;
+      margin-right:10px;
+    }
   }
 }

@@ -1,7 +1,9 @@
 - if current_user
   .log-in-out
+    - if current_user.image_url
+      .image= image_tag current_user.image_url, height: 20
     = current_user.name + " - "
-    = link_to "Log out", "/logout"
+    = link_to "Log out", logout_path
 - else
   .log-in-out= link_to "Log in", "/auth/google_oauth2"
 %h2 Gifting
