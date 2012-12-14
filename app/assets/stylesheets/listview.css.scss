@@ -1,0 +1,159 @@
+body {
+	background: {
+		image: url(../img/wood.png);
+		position: center;
+	}
+}
+
+.navbar-static-top {
+	box-shadow: 0px 1px 5px black;
+}
+
+#header {
+	.log-in-out {
+		margin: {
+			top: 13px;
+		}
+	}
+	padding: {
+		bottom: 10px;
+	}
+}
+
+#content {
+	#page {
+		border-radius: 4px;
+		background: {
+			color: white;
+		}
+		min-height: 600px;
+		.row-fluid {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
+#listHolder {
+
+}
+
+#list {
+	box-shadow: 0px 1px 7px 1px black;
+	border-radius: 3px;
+	background: {
+		color: white;
+	}
+	color: black;
+	font-size: 15px;
+	position: relative;
+	top: -10px;
+	li {
+		list-style-type: none;
+	}
+	#listTitle {
+		color: black;
+		width: 80%;
+		margin: 0 auto;
+		padding: {
+			top: 5px !important;
+			bottom: 5px !important;
+		}
+	}
+	#item-list {
+		$itemHeight: 30px;
+		$borderRadius: 4px;
+		margin: {
+			top: 10px;
+		}
+		.item {
+			input {
+				position: relative;
+				top: 4px;
+				float: left;
+				padding: {
+					left: 0px;
+					right: 0px;
+				}
+				margin: {
+					left: 0px;
+					right: 0px;
+				}
+			}
+			span {
+				line-height: 30px;
+				border-radius: $borderRadius;
+				width: 480px;
+				float: right;
+				background: {
+					color: #f5f5f5;
+				}
+				padding: {
+					left: 5px;
+				}
+				display: block;
+				height: 30px;
+			}
+			width: 500px;
+			border-radius: $borderRadius;
+			height: $itemHeight;
+			margin: {
+				top: 2px;
+				bottom: 2px;
+			}
+			padding: {
+				left: 5px;
+			}
+			background: yellow;
+		}
+		.comment {
+			span {
+				border-radius: $borderRadius;
+				line-height: 30px;
+				float: right;
+				width: 400px;
+				background: {
+					color: #bcbcbc;
+				}
+				padding: {
+					left: 15px;
+				}
+				display: block;
+				height: 100%;
+			}
+			border-radius: $borderRadius;
+			height: $itemHeight;
+			width: 460px;
+			background: red;
+			margin: {
+				top: 2px;
+				bottom: 2px;
+				left: 20px;
+			}
+		}
+		.purchased {
+			span {
+				background: {
+					color: #646464 !important;
+				}
+				text-decoration: line-through;
+			}
+		}
+		.newcomment {
+			input {
+				line-height: 30px;
+				float: left;
+				width: 401px;
+				margin: {
+					top: 0px;
+					bottom: 0px;
+					left: 45px;
+				}
+				padding: {
+					top: 0px;
+					bottom: 7px;
+				}
+			}
+		}
+	}
+}
